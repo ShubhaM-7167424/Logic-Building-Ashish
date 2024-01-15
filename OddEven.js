@@ -1,20 +1,25 @@
-function checkIfEvenOrOdd(number){
-    if(number % 2 === 0){
-        console.log(`${number} is even`);
-    }else{
-        console.log(`${number} is odd`);
-    }
+function checkEvenOrOdd(num) {
+  if (num % 2 === 0) {
+    return "Even";
+  } else {
+    return "Odd";
+  }
 }
 
-function checkIfEvenOrOdd2(number){
-   return  number % 2 === 0 ? `${number} is even` : `${number} is odd`;
+console.log(checkEvenOrOdd(0));
+console.log(checkEvenOrOdd(4));
+console.log(checkEvenOrOdd(787));
+console.log(checkEvenOrOdd(-3186));
+
+
+function checkEvenOrOdd2(num){
+    let result = num % 2 === 0 ? "Even" : "Odd";
+    return result;
 }
 
-console.log(checkIfEvenOrOdd(5));
-console.log(checkIfEvenOrOdd(24));
-console.log(checkIfEvenOrOdd(-4));
-console.log(checkIfEvenOrOdd(17));
-console.log(checkIfEvenOrOdd(0));
+console.log(checkEvenOrOdd2(0));
+console.log(checkEvenOrOdd2(9));
+console.log(checkEvenOrOdd2(-1177));
+console.log(checkEvenOrOdd2(8234));
 
-console.log(checkIfEvenOrOdd2(38));
-console.log(checkIfEvenOrOdd2(157));
+

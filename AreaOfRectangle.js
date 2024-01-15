@@ -1,15 +1,15 @@
-function areaOfRectangle(length, width) {
-    if(length < 0 ){
-        throw new RangeError('length should be a positive number');
+function AreaOfRectangle( height, width ) {
+    if(height < 0){
+        throw RangeError('height must be greater than 0')
     }
     if(width < 0){
-        throw new RangeError('width should be a positive number');
+        throw RangeError('width must be greater than 0')
     }
-    const area = length * width;
-    console.log('areaOfRectangle ', area);
+    return height * width;
 }
 
-console.log(areaOfRectangle(2, 5));
-console.log(areaOfRectangle(2.5, 5));
-// console.log(areaOfRectangle(-2, 5));
-console.log(areaOfRectangle(2.5, -5));
+console.log(AreaOfRectangle(10, 20));
+console.log(AreaOfRectangle(-10, 20));
+console.log(AreaOfRectangle(10, -20));
+
+

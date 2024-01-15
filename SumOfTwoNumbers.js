@@ -1,10 +1,9 @@
-function sum(a,b ){
-    const sum = a + b;
-    console.log('sum ', sum);
+function Sum(a,b){
+    return a+b;
 }
 
-console.log(sum(38, 12));
-console.log(sum(-38, 12));
-console.log(sum(-3, -2));
-console.log(sum(-3, -2.5));
-console.log(sum(3.5, -2.5));
+
+console.log(Sum(1,2));
+console.log(Sum(2883,32));
+console.log(Sum(-39,32));
+
