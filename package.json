@@ -1,0 +1,11 @@
+{
+  "name": "logic-building-ashish",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scripts.js",
+  "scripts": {
+    "start": "node script.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
