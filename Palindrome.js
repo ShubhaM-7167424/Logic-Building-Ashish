@@ -15,4 +15,13 @@ console.log(isPalindrome("racecar"));
 console.log(isPalindrome("malayalam"));
 console.log(isPalindrome("madam"));
 console.log(isPalindrome("rafting"));
-console.log(isPalindrome(479));
+
+function isPalindrome2(str) {
+  return str === str.split("").reverse().join("");
+}
+
+console.log(isPalindrome2("rahul"));
+console.log(isPalindrome2("racecar"));
+console.log(isPalindrome2("malayalam"));
+
+
