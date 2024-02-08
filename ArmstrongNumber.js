@@ -6,7 +6,7 @@ function isArmstrongNumber(number) {
         sum += r * r * r;
         number = Math.floor(number / 10);
     }
-    if(num == sum){
+    if(num === sum){
         return 'Armstrong';
     }else{
         return 'Not Armstrong';
