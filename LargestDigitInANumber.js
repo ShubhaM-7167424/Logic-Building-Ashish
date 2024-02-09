@@ -1,6 +1,6 @@
 function LargestDigitInANumber(number) {
-  let largestDigit = number % 10;
-  number = Math.floor(number / 10);
+  let largestDigit = 0;
+
   while (number > 0) {
     let r = number % 10;
     if (r > largestDigit) {
@@ -8,6 +8,9 @@ function LargestDigitInANumber(number) {
     }
     number = Math.floor(number / 10);
   }
+
   return largestDigit;
 }
 console.log(LargestDigitInANumber(7541));
+console.log(LargestDigitInANumber(1239));
+console.log(LargestDigitInANumber(12543));
