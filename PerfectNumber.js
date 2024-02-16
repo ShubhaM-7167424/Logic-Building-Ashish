@@ -12,4 +12,4 @@ function perfectNumber(number) {
   }
 }
 
-console.log(perfectNumber(8128));
+console.log(perfectNumber(28));
