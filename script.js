@@ -1,24 +1,15 @@
-function smallestNumber(a, b, c) {
-  if (a < b && a < c) {
-    return a;
-  } else if (b < a && b < c) {
-    return b;
-  } else {
-    return c;
-  }
-}
+function countCharacter(str) {
+    str = str.toLowerCase()
+    let result={}
 
-function LargestNumber(a, b, c) {
-  if (a > b && a > c) {
-    return a;
-  } else if (b > a && b > c) {
-    return b;
-  } else {
-    return c;
-  }
+    for(let i=0; i<str.length; i++){
+       
+        if(!result[str[i]]){
+            result[str[i]]=0
+        }
+        result[str[i]] += 1;
+    }
+    return result;
 }
+console.log(countCharacter('Shubham singh'));
 
-console.log(LargestNumber(1, 2, 3));
-console.log(LargestNumber(300, 200, 600));
-console.log(LargestNumber(100, 100, 100));
-console.log(LargestNumber(1, 832, 3));
