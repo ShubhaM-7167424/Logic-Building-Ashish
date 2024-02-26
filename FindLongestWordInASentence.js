@@ -9,7 +9,7 @@ function findLongestWordInASentence(str) {
       longestWord = words[i];
     }
   }
-  return { maxLength: longestLength, longestWord };
+  return {  longestLength, longestWord };
 }
 
 console.log(findLongestWordInASentence("I have a car"));
