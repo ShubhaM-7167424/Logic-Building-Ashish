@@ -2,8 +2,8 @@ function areAnagrams(s1, s2) {
   let charsInS1 = {};
   let charsInS2 = {};
 
-  if(s1.length !== s2.length){
-      return false;
+  if (s1.length !== s2.length) {
+    return false;
   }
 
   for (let char of s1) {
